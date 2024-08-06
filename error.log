@@ -1,0 +1,6 @@
+PDOException: SQLSTATE[HY000] [2054] The server requested authentication method unknown to the client [auth_gssapi_client] in C:\xampp\htdocs\e_commerce\config\db.php:13
+Stack trace:
+#0 C:\xampp\htdocs\e_commerce\config\db.php(13): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue))
+#1 C:\xampp\htdocs\e_commerce\classe\panierclass.php(23): db->connecte()
+#2 C:\xampp\htdocs\e_commerce\panier.php(8): panier->__construct()
+#3 {main}

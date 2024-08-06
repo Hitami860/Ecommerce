@@ -1,0 +1,23 @@
+form span{
+    font-size: 3em;
+    cursor: pointer;
+    color: grey;
+}
+  
+form span.gold {
+    color: gold;
+}
+
+.etoile1 {
+  font-size: 2em;
+  cursor: initial;
+
+}
+.cool {
+  font-size: 1em;
+  cursor: initial;
+}
+
+p span {
+  font-size: 1.5em;
+}
