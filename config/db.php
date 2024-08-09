@@ -10,7 +10,7 @@ class db
     public function connecte()
     {
         try {
-            $this->db = new PDO("mysql:host=localhost;dbname=ecommerce", 'root', '');
+            $this->db = new PDO("mysql:host=localhost;dbname=ecommerce", 'root', 'root');
             return $this->db;
         } catch (PDOException $e) {
             $error = fopen('error.log', 'w');
