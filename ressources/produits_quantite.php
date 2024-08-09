@@ -48,11 +48,11 @@ class ProduitsQuantites extends db
         $sql3->execute();
         $data = $sql3->fetch();
 
-        // if (!$data) {
+        if (!$data) {
             $sql = $this->connecte()->prepare("INSERT INTO produits_quantite (produits_id, quantites) VALUES (:produits_id, :quantites)");
-        // } else {
-        //     $sql = $this->connecte()->prepare("UPDATE produits_quantite SET quantites = :quantites WHERE produits_id = :produits_id");
-        // }
+        } else {
+            $sql = $this->connecte()->prepare("UPDATE produits_quantite SET quantites = :quantites WHERE produits_id = :produits_id");
+        }
 
         $sql->bindParam(":produits_id", $id);
         $sql->bindParam(":quantites", $quantite);
